@@ -1,0 +1,46 @@
+import styled from 'styled-components';
+import * as colors from '../../config/colors';
+
+export const Form = styled.form`
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+
+  input {
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 10px;
+  }
+`;
+
+export const ProfilePicture = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 20px;
+  position: relative;
+  margin-top: 30px;
+
+  img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+
+  a {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: ${colors.primaryColor};
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+`;
